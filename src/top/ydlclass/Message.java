@@ -13,6 +13,10 @@ private  String friendUserName;
     public Message() {
     }
 
+    public Message(Integer type) {
+        this.type = type;
+    }
+
     public Message(Integer type, String content) {
         this.type = type;
         this.content = content;
@@ -38,6 +42,7 @@ private  String friendUserName;
 
     public void setContent(String content) {
         this.content = content;
+
     }
 
     public String getUserName() {
